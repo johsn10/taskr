@@ -13,10 +13,10 @@ rScript is a scripting language mainly to automate tedious terminal work. It's a
 let fileContents <- cat example.txt
 let siteContents <- curl google.com
 
-let isEqual Bool = false
+let isEqual = false
 if fileContents == siteContents 
-    |true isEqual = true
-    |false - isEqual = false
+|true let isEqual = true
+|false -> echo "isEqual was false""
 
 !output isEqual
 ````
